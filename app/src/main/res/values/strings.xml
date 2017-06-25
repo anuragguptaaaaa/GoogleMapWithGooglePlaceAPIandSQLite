@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Main_Task</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]>
+    </string>
+    <string name="place_details1">
+    <![CDATA[
+
+        <br/>
+         %3$s
+        <br/>
+
+    ]]>
+    </string>
+    <string name="google_api_key">AIzaSyC6d2OjrtHWWMOm2VL58D1CF5oKosBq6Y4</string>
+</resources>

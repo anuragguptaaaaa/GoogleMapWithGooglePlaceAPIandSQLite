@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView">
+
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="47dp" />
+
+    </android.support.v7.widget.CardView>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.anuragg.task1.MainActivity"
+        android:layout_below="@+id/cardView"
+      />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4700b3"
+        android:onClick="onChange"
+        android:textColor="#FFF"
+        android:text="Map Type"
+        android:textAllCaps="false"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/cardView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:id="@+id/bZoomin"
+
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:onClick="onZoom"
+        android:layout_alignBottom="@+id/bZoomout"
+        android:layout_alignLeft="@+id/bZoomout"
+        android:layout_alignStart="@+id/bZoomout"
+        android:layout_marginBottom="39dp" />
+
+
+    <Button
+        android:id="@+id/bZoomout"
+        android:layout_width="50dp"
+        android:onClick="onZoom"
+        android:layout_height="50dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="wel"
+        android:text="Emergency"
+        android:textColor="#FFF"
+        android:background="#0d0081"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv1"-->
+
+        <!--android:layout_alignBottom="@+id/bZoomout"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+</RelativeLayout>
